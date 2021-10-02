@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  padding: 50px 250px;
+  background-color: #0f1424;
+  color: white;
+}
+
+body main {
+  width: 100%;
+  height: 73vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .padding {
+  padding: 10px;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  min-width: 25%;
+}
+
+body main .padding .column-full {
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  height: 103%;
+}
+
+body main .padding .column-full .profile {
+  width: 100%;
+  background-color: #5847eb;
+  height: 65%;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+body main .padding .column-full .profile img {
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+body main .padding .column-full .profile p {
+  padding-top: 10px;
+  opacity: 0.6;
+}
+
+body main .padding .column-full .profile h1 {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+body main .padding .column-full span {
+  display: block;
+  padding: 10px 20px;
+}
+
+body main .padding .column-full span:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+body main .padding .column {
+  background-color: #1c1f4a;
+  border-radius: 20px;
+  height: 50%;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+body main .padding .column .image {
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 80px;
+  z-index: 1;
+}
+
+body main .padding .column .content {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 2;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  background-color: #1c1f4a;
+  padding: 30px;
+}
+
+body main .padding .column .content .title {
+  width: 100%;
+  display: block;
+}
+
+body main .padding .column .content .title h3 {
+  font-weight: 400;
+  float: left;
+}
+
+body main .padding .column .content .title span {
+  float: right;
+  opacity: 0.6;
+}
+
+body main .padding .column .content .title span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+body main .padding .column .content .title::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body main .padding .column .content h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  padding: 15px 0;
+}
+
+body main .padding .column .content p {
+  opacity: 0.6;
+}
+
+body main .padding .column:hover {
+  opacity: 1;
+}
+
+body::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 1484px) {
+  body {
+    padding: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  body {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  body main .padding {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  body main .padding {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  body main .padding .column-full {
+    text-align: center;
+  }
+  body main .padding .column-full .profile {
+    height: 80%;
+  }
+  body main .padding .column-full span {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
